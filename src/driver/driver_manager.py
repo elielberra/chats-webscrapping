@@ -12,8 +12,7 @@ def create_driver():
     options = webdriver.ChromeOptions()
     options.add_argument('--disable-notifications')
     options.set_capability("goog:loggingPrefs", {'performance': 'ALL'})
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),
-                              options = options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options = options)
     return driver
 
 def login(driver):
