@@ -2,7 +2,6 @@ import os
 import copy
 import requests
 import json
-
 from utils.file_utils import write_chat_file
 
 def get_api_prospect_messages_data():
